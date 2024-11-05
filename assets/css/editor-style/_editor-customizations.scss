@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Default styles to extend elsewhere
+   ========================================================================== */
+
+.make-title-black {
+	background-color: black;
+	margin: 0 !important;
+	padding: 30px 50px;
+
+	@extend h1 !optional;
+
+	.wp-block-post-title {
+		color: white;
+		position: relative;
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+.remove-top-margin {
+	margin-top: 0 !important;
+}
+
+.add-bottom-margin {
+	margin-bottom: 30px;
+}
+
+.center-in-space {
+	h1 {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.cross-out-title {
+	.wp-block-post-title {
+		transition: 0.3s all ease;
+	}
+	.wp-block-post-title:not(:focus) {
+		opacity: 0.15;
+		text-decoration: line-through;
+	}
+}
+
+/* ==========================================================================
+   Make title black
+   ========================================================================== */
+
+body.post-type-page {
+	.edit-post-visual-editor__post-title-wrapper {
+		@extend .make-title-black;
+		@extend .remove-top-margin;
+	}
+}
+
+/* ==========================================================================
+   Give title margin
+   ========================================================================== */
+
+body.post-type-post {
+	.edit-post-visual-editor__post-title-wrapper {
+		@extend .add-bottom-margin;
+		@extend .center-in-space;
+	}
+}
+
+/* ==========================================================================
+   Cross out title
+   ========================================================================== */
+
+body.content-title-hidden,
+body.post-type-page {
+	.edit-post-visual-editor__post-title-wrapper {
+		@extend .cross-out-title;
+	}
+}

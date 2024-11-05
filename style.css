@@ -1,0 +1,21 @@
+/*
+Theme Name: Elodin TwentyTwentyFive
+Theme URI: https://olliewp.com
+Author: Jon Schroeder
+Author URI: https://elod.in
+Description: A child theme for the Ollie block theme.
+Requires at least: 6.0
+Tested up to: 6.2
+Requires PHP: 5.7
+Version: 0.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: ollie
+Text Domain: ollie-child
+Tags: blog, entertainment, portfolio, grid-layout, one-column, two-columns, three-columns, four-columns, wide-blocks, accessibility-ready, block-patterns, block-styles, custom-logo, custom-menu, editor-style, featured-images, full-site-editing, full-width-template, rtl-language-support, style-variations, template-editing, theme-options, translation-ready, 
+*/
+
+.entry-content > .wp-block-group {
+	overflow: hidden !important;
+	max-width: 100vw !important;
+}

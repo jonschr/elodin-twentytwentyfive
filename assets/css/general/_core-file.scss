@@ -1,0 +1,30 @@
+.wp-block-file {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	margin-bottom: 15px;
+
+	a {
+		order: 1;
+		text-decoration: none;
+	}
+
+	a:not(.wp-block-file__button) {
+		color: var(--contrast);
+		pointer-events: none;
+	}
+
+	.wp-block-file__button {
+		// @extend .btn;
+
+		margin: 0 15px 0 0;
+		order: 0;
+		color: var(--white-color);
+		background-color: var(--accent);
+
+		&:hover {
+			color: var(--white-color);
+			background-color: var(--accent-2);
+		}
+	}
+}

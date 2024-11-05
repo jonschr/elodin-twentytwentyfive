@@ -1,0 +1,34 @@
+body {
+	font-size: 18px;
+}
+
+p:last-child,
+ul:last-child,
+ol:last-child {
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   All headings
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 50px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}

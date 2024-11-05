@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Padding on the frontend
+   ========================================================================== */
+
+:where(.entry-content > .gb-container) {
+	@include tablet {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	@media (max-width: 1260px) {
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+}
+
+/* ==========================================================================
+   Padding in the editor AND on the frontend
+   ========================================================================== */
+
+:where(.entry-content > .gb-container),
+:where(.gb-is-root-block > .gb-container),
+:where(.gb-root-block-generateblocks-container > .gb-container),
+:where(.block-library-block__reusable-block-container > .gb-container) {
+	padding: 60px 25px;
+
+	@include tablet {
+		padding: 45px 25px;
+	}
+
+	@include mobile {
+		padding: 25px;
+	}
+}
+
+/* ==========================================================================
+   Default to left alignment when we set it on the block
+   ========================================================================== */
+
+.entry-content > .gb-container,
+.prefooter > .gb-container {
+	@include mobile {
+		text-align: left;
+	}
+}
+
+/* ==========================================================================
+   Positioning
+   ========================================================================== */
+
+.gb-container > .gb-container {
+	position: relative;
+}
+
+/* ==========================================================================
+   Dotted line on containers
+   ========================================================================== */
+
+.gb-inside-container .block-editor-inner-blocks,
+.block-editor-block-list__block.gb-container > .gb-container {
+	outline: 1px dashed rgba(gray, 0.4);
+}

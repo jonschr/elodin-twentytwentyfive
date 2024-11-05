@@ -1,0 +1,126 @@
+// /* ==========================================================================
+//    Generic
+//    ========================================================================== */
+
+// .btn {
+// 	font-weight: bold;
+// 	cursor: pointer;
+// 	padding: 15px 25px !important;
+// 	text-decoration: none !important;
+// 	font-size: 15px !important;
+// 	font-weight: 600;
+// 	display: inline-block !important;
+// 	position: static;
+// 	border-radius: 3px;
+
+// 	transition: all 0.3s ease-in-out;
+
+// 	@include mobile {
+// 		display: block;
+// 		width: 100%;
+// 	}
+// }
+
+// /* ==========================================================================
+//    Core buttons
+//    ========================================================================== */
+
+// .wp-block-buttons {
+// 	margin-top: 30px;
+// 	margin-bottom: 30px;
+
+// 	@include mobile {
+// 		margin-top: 20px;
+// 	}
+
+// 	&:first-child {
+// 		margin-top: 0;
+// 	}
+
+// 	&:last-child {
+// 		margin-bottom: 0;
+// 	}
+
+// 	.wp-block-button {
+// 		@include mobile {
+// 			display: block;
+// 			width: 100%;
+// 		}
+// 	}
+// }
+
+// /* ==========================================================================
+//    GeneratePress buttons
+//    ========================================================================== */
+
+// .gb-button-wrapper {
+// 	.gb-button {
+// 		@extend .btn;
+// 	}
+// }
+
+// /* ==========================================================================
+//    Gravity forms buttons
+//    ========================================================================== */
+
+// .gform_footer input[type='submit'] {
+// 	@extend .btn;
+
+// 	&:last-child {
+// 		margin-bottom: 0;
+// 		margin-right: 0;
+// 	}
+// }
+
+// /* ==========================================================================
+//    Blog buttons
+//    ========================================================================== */
+
+// .read-more.button {
+// 	@extend .btn;
+// }
+
+// /* ==========================================================================
+//    Buttons
+//    ========================================================================== */
+
+// .wp-block-button a.wp-block-button__link,
+// .wp-block-button div.wp-block-button__link {
+// 	@extend .btn;
+// }
+
+// /* ==========================================================================
+//    Nav buttons
+//    ========================================================================== */
+
+// .nav-button > a {
+// 	@include desktop {
+// 		font-weight: bold;
+// 		cursor: pointer;
+// 		padding: 15px 25px !important;
+// 		text-decoration: none !important;
+// 		font-size: 15px !important;
+// 		font-weight: 600;
+// 		display: inline-block !important;
+// 		position: static;
+// 		border-radius: 3px;
+// 		background-color: var(--accent);
+// 		color: white;
+
+// 		&:hover {
+// 			background-color: var(--accent-2);
+// 			color: white;
+// 		}
+// 	}
+// }
+
+// /* ==========================================================================
+//    Gforms buttons
+//    ========================================================================== */
+
+// .gform-button--width-full {
+// 	@extend .btn;
+
+// 	width: 100% !important;
+// 	text-align: center;
+// }

@@ -1,0 +1,54 @@
+/* ==========================================================================
+   Vars
+   ========================================================================== */
+
+$boxshadow: 0 10px 30px 0 rgba(black, 0.12);
+$marginbottom: 20px;
+
+$headerheightdesktop: 100px;
+$headerheighttablet: 60px;
+$headerheightmobile: 60px;
+
+/* ==========================================================================
+   Queries
+   ========================================================================== */
+
+$thin: 600px;
+$medium: 960px;
+$wide: 1200px;
+
+@mixin mobile {
+	@media (max-width: #{$thin}) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: #{$thin}) and (max-width: #{$medium}) {
+		@content;
+	}
+}
+
+@mixin notdesktop {
+	@media (max-width: #{$medium}) {
+		@content;
+	}
+}
+
+@mixin notmobile {
+	@media (min-width: #{$thin}) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: #{$medium}) {
+		@content;
+	}
+}
+
+@mixin desktop-wide {
+	@media (min-width: #{$wide}) {
+		@content;
+	}
+}

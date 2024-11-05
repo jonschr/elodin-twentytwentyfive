@@ -1,0 +1,17 @@
+h1.wp-block-heading,
+h2.wp-block-heading,
+h3.wp-block-heading {
+	margin-top: 50px;
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.is-style-kicker {
+	+ h1.wp-block-heading,
+	+ h2.wp-block-heading,
+	+ h3.wp-block-heading {
+		margin-top: 0;
+	}
+}

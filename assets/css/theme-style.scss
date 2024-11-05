@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Get global options
+   ========================================================================== */
+
+@import 'global';
+
+/* ==========================================================================
+   Includes
+   ========================================================================== */
+
+//* Early-load defaults
+@import 'initial/*';
+
+//* Transparent header
+// @import 'transparent-header/_*';
+
+//* The normal theme files
+@import 'template/_*';
+
+//* Gutenberg
+@import 'general/*';
+
+//* Layouts
+@import 'layout/*';
+
+//* Outlined buttons
+// @import 'button-outlined/_*';

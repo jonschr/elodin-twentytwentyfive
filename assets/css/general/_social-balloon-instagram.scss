@@ -1,0 +1,77 @@
+body #sb_instagram {
+	position: relative;
+	margin: 0 !important;
+	padding: 0 !important;
+
+	.sbi_follow_btn {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		top: auto;
+		transform: translateY(50%) translateX(-50%);
+		text-transform: uppercase;
+		z-index: 50;
+		margin: 0 !important;
+
+		a {
+			// letter-spacing: 0.05em;
+			background: var(--accent) !important;
+			box-shadow: none !important;
+			color: white !important;
+			margin: 0 !important;
+
+			&:hover {
+				background: var(--accent-2) !important;
+				box-shadow: none !important;
+			}
+		}
+	}
+
+	#sbi_images {
+		margin: 0 !important;
+		padding: 0 !important;
+
+		.sbi_item {
+			position: relative;
+			cursor: pointer;
+			padding: 0 !important;
+			margin: 0 !important;
+
+			&:before {
+				content: '+';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translateY(-50%) translateX(-50%);
+				font-size: 100px;
+				color: white;
+				z-index: 20;
+				opacity: 0;
+				transition: 0.6s all ease;
+				pointer-events: none;
+			}
+
+			&:after {
+				opacity: 0;
+				content: '';
+				background-color: var(--accent);
+				position: absolute;
+				inset: 0;
+				transition: 0.3s all ease;
+				pointer-events: none;
+				z-index: 10;
+			}
+
+			&:hover {
+				&:after {
+					opacity: 0.85;
+				}
+
+				&:before {
+					opacity: 1;
+					transform: translateY(-50%) translateX(-50%) rotate(180deg);
+				}
+			}
+		}
+	}
+}
