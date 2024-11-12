@@ -1,6 +1,6 @@
 //! CSS
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass')); // Ensures Dart Sass is used
 var sourcemaps = require('gulp-sourcemaps');
 var sassGlob = require('gulp-sass-glob');
 const cleanCSS = require('gulp-clean-css');
