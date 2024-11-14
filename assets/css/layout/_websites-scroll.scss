@@ -41,10 +41,10 @@
 	}
 
 	.websites {
-		width: 600px;
+		min-width: 600px;
 
 		@include mobile {
-			width: 300px;
+			min-width: 300px;
 		}
 
 		img {
