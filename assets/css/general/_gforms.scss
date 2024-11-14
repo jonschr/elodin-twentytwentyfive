@@ -1,0 +1,25 @@
+.gform_wrapper {
+	margin: 0;
+	padding: 0;
+
+	p.gform_description {
+		margin: 0 0 25px;
+	}
+
+	.gform_button {
+		border-radius: 3px;
+		border-width: 0;
+		line-height: inherit;
+		padding: 20px 30px !important;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline !important;
+		}
+	}
+
+	.gform-button--width-full {
+		width: 100% !important;
+		text-align: center !important;
+	}
+}
