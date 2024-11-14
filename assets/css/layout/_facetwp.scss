@@ -1,0 +1,47 @@
+.facetwp-facet.facetwp-facet-reset {
+	width: auto;
+}
+
+.facetwp-facet {
+	width: 300px;
+
+	.facetwp-input-wrap {
+		width: 100%;
+
+		input.facetwp-search {
+			width: 100%;
+			height: 50px;
+			padding: 0 15px;
+			border-radius: 0;
+			font-size: 16px;
+		}
+	}
+
+	.fs-wrap {
+		width: 100%;
+		.fs-label-wrap {
+			width: 100%;
+
+			.fs-label {
+				height: 50px !important;
+				line-height: 50px;
+				padding: 0 15px;
+				font-size: 16px;
+			}
+		}
+	}
+
+	.fs-dropdown {
+		width: 300px;
+	}
+
+	.fs-options {
+		.fs-option-label {
+			font-size: 16px;
+		}
+	}
+
+	.facetwp-icon {
+		display: none;
+	}
+}
