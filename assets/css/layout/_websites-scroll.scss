@@ -42,6 +42,7 @@
 
 	.websites {
 		min-width: 600px;
+		position: relative;
 
 		@include mobile {
 			min-width: 300px;
@@ -54,14 +55,80 @@
 				border-radius: 5px;
 			}
 		}
+
+		.the-content {
+			position: absolute;
+			display: flex;
+			inset: 0;
+			background-color: rgba(#4d34fa, 0.9);
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			padding: 40px;
+			transition: 0.3s all ease;
+			opacity: 0;
+			z-index: 10;
+			border-radius: 10px;
+
+			.the-content-inner {
+				border-radius: 5px;
+				transform: translateY(100%);
+				transition: 0.5s all ease;
+				opacity: 0;
+
+				h3 {
+					font-size: 18px;
+					line-height: 1.4;
+					margin-bottom: 20px;
+					display: block;
+					color: white;
+				}
+
+				a.button-websites {
+					background-color: white;
+					color: #4d34fa;
+					text-decoration: none;
+					// text-transform: uppercase;
+					font-weight: 600;
+					font-size: 14px;
+					padding: 15px 25px;
+					border-radius: 5px;
+					display: inline-block;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+
+		&:hover {
+			.the-content {
+				transform: translate(0);
+				opacity: 1;
+
+				.the-content-inner {
+					transform: translateY(0);
+					opacity: 1;
+				}
+			}
+		}
 	}
 
 	&.websites-left {
 		animation: scroll-left 300s linear infinite;
+
+		&:hover {
+			animation-play-state: paused;
+		}
 	}
 
 	&.websites-right {
 		animation: scroll-right 300s linear infinite;
+
+		&:hover {
+			animation-play-state: paused;
+		}
 	}
 
 	img {
